@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    background-color: #333;
+    width: 100%;
+    margin: 0;
+}
+
+p,
+button,
+input {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 0.7rem;
+    display: flex;
+    align-items: baseline;
+}
+
+input {
+    font-size: 1.1em;
+    padding: 10px 10px 10px 5px;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+}
+
+input:focus {
+    outline: none;
+}
+
+span {
+    width: 100%;
+    margin-right: 0.9rem;
+    padding: 0.6rem 1.1rem;
+}
+
+span:focus {
+    outline: none;
+    border: 1px solid slategrey;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.span_editable {
+    outline: none;
+    border: 1px solid slategrey;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.title_editable {
+    outline: none;
+    border: 1px solid slategrey;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.header_title {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid slategrey;
+    margin-bottom: 30px;
+}
+
+.input_title {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.input_title:focus {
+    outline: none;
+}
+
+.edit_task_button,
+.edit_title_button {
+    background-color: grey;
+    color: white;
+    border: 0px;
+    border-radius: 25px;
+}
+
+.edit_task_button:focus,
+.edit_title_button:focus,
+#add_button:focus {
+    outline: none;
+}
+
+#input_task {
+    width: 80%;
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 50px 10px 15px;
+    margin: auto;
+}
+
+#add_button {
+    margin-left: -45px;
+    background-color: dodgerblue;
+    color: white;
+    border: 0px;
+    border-radius: 25px;
+}
+
+[type="checkbox"] {
+    margin: 0 10px 0 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    margin-top: 5em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.one_list {
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.complete {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete {
+    background-color: tomato;
+    color: white;
+    border: 0px;
+    border-radius: 25px;
+}
