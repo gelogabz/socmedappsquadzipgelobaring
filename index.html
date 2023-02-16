@@ -15,13 +15,54 @@
     <title>SocMed App Squadzip - Gelo Baring</title>
   </head>
 
-  <body>
-    <main class="container-fluid">
-      <div class="container flex lists">
-        <div class="one_list">
+  <body class="bg-dark">
+    <nav class="navbar navbar-dark bg-dark border-bottom container-fluid w-auto">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/FullnameIcon.png" alt="GeloBaring" class="img-fluid w-50">
+        </a>
+        <p class="lead nav-title">ThoughtSpace</p>
+      </div>
+    </nav>
+
+    <main class="row container-fluid mx-auto">
+
+      <!-- Profile -->
+      <section class=" col-md-3 p-3 ms-2 my-3 border rounded-4">
+        <div class="container h-auto">
+          <div class="img_container justify-content-center d-flex align-items-center">
+            <img src="assets/pexels-photo-3217911.jpeg" alt="Traveler" class="w-25 img-fluid rounded-5" />
+            <span>
+              <h2 class="fw-bold">Jude Dela Cruz</h2>
+              <h5>@jdc</h5>
+            </span>
+          </div>
+
+
+          <div class="content">
+            <p class="p-2 text-center fst-italic">
+              "Hi I'm Jude Dela Cruz, I love to travel because not only is it the ultimate adventure but it also exposes
+              you to new types of people, different ways of living, and opens up your mind. I just like to walk around
+              in beautiful places that resemble the shire from Lord of the Rings while exploring new culinary terrains."
+            </p>
+            <ul class="d-flex mx-auto justify-content-center">
+              <li><a href="http://www.twitter.com" class="bi bi-twitter" style="font-size:30px"></a></li>
+              <li><a href="http://www.pinterest.com" class="bi bi-pinterest" style="font-size:30px"></a></li>
+              <li><a href="http://Www.facebook.com" class="bi bi-facebook" style="font-size:30px"></a></li>
+              <li><a href="http://Www.github.com" class="bi bi-github" style="font-size:30px"></a></li>
+            </ul>
+          </div>
+          <div class="profile text-center">
+            <a href="" class="btn btn-lg btn-outline-light ">Edit Profile</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Thoughts Feed -->
+      <section class="col-md-8 container d-flex justify-content-around lists">
+        <div class="one_list container">
           <div class="header_title">
-            <span class="input_title">Your News Feed</span>
-            <!-- <button type="button" class="edit_title_button"><i class="fa fa-pencil" aria-hidden="true"></i></button> -->
+            <span class="input_title">Your Thoughts</span>
           </div>
 
           <div class="mx-auto text-center">
@@ -30,32 +71,76 @@
               <button type="button" id="add_button"><i class="fa fa-plus" aria-hidden="true"></i></button>
             </form>
           </div>
-          <hr class="muted" />
+          <div class="list-scroll">
+            <div>
+              <ul id="task_list">
+                <li>
+                  <span class="input">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat</span>
+                  <button type="button" class="edit_task_button"><i class="fa fa-pencil"
+                      aria-hidden="true"></i></button>
+                  <button type="button" class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                </li>
+                <li>
+                  <span class="input">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat</span>
+                  <button type="button" class="edit_task_button"><i class="fa fa-pencil"
+                      aria-hidden="true"></i></button>
+                  <button type="button" class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                </li>
 
-          <div>
-            <ul id="task_list">
-              <li>
-                <!-- <input type="checkbox"> -->
-                <span class="input">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat</span>
-                <button type="button" class="edit_task_button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                <button type="button" class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-              </li>
-              <li>
-                <!-- <input type="checkbox"> -->
-                <span class="input">One line sometimes is enough</span>
-                <button type="button" class="edit_task_button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                <button type="button" class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-              </li>
-            </ul>
+                <li>
+                  <span class="input">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat</span>
+                  <button type="button" class="edit_task_button"><i class="fa fa-pencil"
+                      aria-hidden="true"></i></button>
+                  <button type="button" class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                </li>
+
+                <li>
+                  <span class="input">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat</span>
+                  <button type="button" class="edit_task_button"><i class="fa fa-pencil"
+                      aria-hidden="true"></i></button>
+                  <button type="button" class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                </li>
+              </ul>
+            </div>
             <h2 id="completed_title">Completed</h2>
             <ul id="completed_list"></ul>
           </div>
         </div>
-      </div>
+      </section>
     </main>
+
+    <!-- Footer start -->
+    <br><br>
+    <footer class="bottom container py-1 my-1 w-50">
+      <ul class="nav justify-content-center pb-1 mb-1 border-bottom">
+        <li><a href="https://www.linkedin.com/in/gelobaring/" class="nav-link px-2 text-primary" target="_blank"><i
+              class="nav-item bi bi-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/gelogabz" class="nav-link px-2 text-primary" target="_blank"><i
+              class="nav-item bi bi-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/thegeloman/" class="nav-link px-2 text-primary" target="_blank"><i
+              class="bi bi-instagram"></i></a></li>
+        <li><a href="https://github.com/gelogabz" class="nav-link px-2 text-primary" target="_blank"><i
+              class="bi bi-github"></i></a></li>
+        <li><a href="https://www.reddit.com/user/gelogabz" class="nav-link px-2 text-primary" target="_blank"><i
+              class="bi bi-reddit"></i></a></li>
+      </ul>
+      <p class="text-center text-light">&copy;2023 <a href="https://gelobaring.tech" target="_blank"
+          rel="noreferrer">Gelo Baring</a> for SquadZip </p>
+    </footer>
+    <!-- Footer end -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>

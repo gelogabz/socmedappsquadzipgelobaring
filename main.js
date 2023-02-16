@@ -98,29 +98,6 @@ function deleteTask() {
     isEmptyList();
 };
 
-// Edit title list
-document.querySelector(".edit_title_button").addEventListener("click", editTitleList);
-function editTitleList() {
-    this.previousElementSibling.setAttribute('class', 'title_editable input_title');
-    this.previousElementSibling.setAttribute('contenteditable', '');
-    this.innerHTML = '<i class="fa fa-check" aria-hidden="true"></i>';
-    this.style.backgroundColor = "mediumseagreen";
-    this.removeEventListener("click", editTitleList);
-    this.addEventListener("click", validateEditTitleList);
-}
-
-// Validate title changes
-function validateEditTitleList() {
-    this.parentNode.children[0].disabled = false;;
-    this.previousElementSibling.removeAttribute('class', 'title_editable');
-    this.previousElementSibling.setAttribute('class', 'input_title');
-    this.previousElementSibling.removeAttribute('contenteditable', '');
-    this.innerHTML = '<i class="fa fa-pencil" aria-hidden="true"></i>';
-    this.style.backgroundColor = "grey";
-    this.removeEventListener("click", validateEditTitleList);
-    this.addEventListener("click", editTitleList);
-}
-
 // Check if the complete list is empty
 function isEmptyList() {
     if (completedList.hasChildNodes() == true) {
